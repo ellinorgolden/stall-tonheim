@@ -1,0 +1,89 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #sidenav
+    [mode]="sidenavMode"
+    [opened]="sidenavOpened"
+    class="sidenav"
+    *ngIf="sidenavMode === 'over'"
+    aria-label="Mobilmeny"
+    role="button"
+  >
+
+      <!-- Mobile Navigation Links -->
+       
+    <div class="close-button-container">
+      <button 
+        mat-icon-button 
+        (click)="sidenav.close()" 
+        aria-label="Lukk meny"
+        >
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" 
+        (click)="sidenav.close()"
+        role="link">Hjem</a>
+      <a mat-list-item routerLink="/ride-kurs" 
+        (click)="sidenav.close()"
+        role="link">Ridekurs</a>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Om oss</mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <a mat-list-item routerLink="/hester-ponnier" (click)="sidenav.close()">Våre hester</a>
+          <a mat-list-item routerLink="/ansatte" (click)="sidenav.close()">Våre ansatte</a>
+      </mat-expansion-panel>
+      <a mat-list-item routerLink="/kleskolleksjon" 
+        (click)="sidenav.close()" 
+        role="link">Kleskolleksjon</a>
+      <a mat-list-item routerLink="/kontakt" 
+        (click)="sidenav.close()" 
+        role="link">Kontakt</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar 
+    color="primary" 
+    class="toolbar-layout"
+    role="banner"
+    aria-label="Toppnavigasjon"
+    >
+    <div class="toolbar-left">
+      <button 
+        mat-icon-button 
+        *ngIf="sidenavMode === 'over'" 
+        (click)="toggleSidenav()" 
+        aria-label="Åpne meny"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <img 
+        class="logo" 
+        src="assets/stalltonheim_logo.png" 
+        alt="Stall Tonheim logo" />
+    </div>
+
+    <!-- Desktop Navigation Links -->
+    <nav 
+      class="desktop-nav" 
+      *ngIf="sidenavMode === 'side'"
+      role="navigation"
+      aria-label="Hovedmeny">
+        <a routerLink="/" role="link">Hjem</a>
+        <a routerLink="/ride-kurs" role="link">Ridekurs</a>
+              <button mat-button [matMenuTriggerFor]="omOssMenu" aria-label="Om oss">
+          Om oss
+        </button>
+        <mat-menu #omOssMenu="matMenu">
+          <button mat-menu-item routerLink="/hester-ponnier">Våre hester</button>
+          <button mat-menu-item routerLink="/ansatte">Våre ansatte</button>
+        </mat-menu>
+
+        <a routerLink="/kleskolleksjon" role="link">Kleskolleksjon</a>
+        <a routerLink="/kontakt" role="link">Kontakt</a>
+    </nav>
+  </mat-toolbar>
+</mat-sidenav-container>
