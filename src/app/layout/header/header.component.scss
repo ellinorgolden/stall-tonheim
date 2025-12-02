@@ -6,7 +6,7 @@
 }
 
 mat-toolbar {
-  background-color: #2c2f67;
+  background-color: var(--background-color-blue);
   height: 100px;
   width: 100%;
   position: sticky;
@@ -50,7 +50,7 @@ mat-toolbar {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: var(--text-color-main);
     font-weight: 500;
     font-size: 16px;
     background: none;
@@ -95,4 +95,43 @@ mat-toolbar {
 
 button[aria-label="Åpne meny"] mat-icon {
   color: rgb(245, 239, 239);
+}
+
+.sidenav mat-expansion-panel {
+  box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+}
+
+.sidenav mat-expansion-panel-header {
+  padding: 0 16px !important;
+  height: 48px !important;
+  background: none !important;
+  border: none !important;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--text-color-main) !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+}
+
+.sidenav mat-expansion-panel-header.mat-expanded,
+.sidenav mat-expansion-panel-header:hover {
+  background: none !important;
+}
+
+.sidenav mat-expansion-panel-header .mat-expansion-indicator {
+  color: var(--text-color-main) !important;
+  margin-left: auto;
+}
+.sidenav mat-expansion-panel a[mat-list-item] {
+  padding-left: 32px !important;   
+  height: 40px !important;
+  color: var(--text-color-main) !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  background: none !important;
 }
