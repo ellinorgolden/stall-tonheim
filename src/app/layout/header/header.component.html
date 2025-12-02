@@ -10,7 +10,6 @@
   >
 
       <!-- Mobile Navigation Links -->
-       
     <div class="close-button-container">
       <button 
         mat-icon-button 
@@ -32,9 +31,8 @@
           <mat-expansion-panel-header>
             <mat-panel-title>Om oss</mat-panel-title>
           </mat-expansion-panel-header>
-
-          <a mat-list-item routerLink="/hester-ponnier" (click)="sidenav.close()">Våre hester</a>
-          <a mat-list-item routerLink="/ansatte" (click)="sidenav.close()">Våre ansatte</a>
+            <a mat-list-item routerLink="/hester-ponnier" (click)="sidenav.close()">Våre hester</a>
+            <a mat-list-item routerLink="/ansatte" (click)="sidenav.close()">Våre ansatte</a>
       </mat-expansion-panel>
       <a mat-list-item routerLink="/kleskolleksjon" 
         (click)="sidenav.close()" 
@@ -77,7 +75,7 @@
               <button mat-button [matMenuTriggerFor]="omOssMenu" aria-label="Om oss">
           Om oss
         </button>
-        <mat-menu #omOssMenu="matMenu">
+        <mat-menu #omOssMenu="matMenu" class="dropdown-menu">
           <button mat-menu-item routerLink="/hester-ponnier">Våre hester</button>
           <button mat-menu-item routerLink="/ansatte">Våre ansatte</button>
         </mat-menu>
