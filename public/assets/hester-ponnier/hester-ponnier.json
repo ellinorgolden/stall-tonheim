@@ -1,0 +1,142 @@
+[
+  {
+    "navn": "Kurrbodas Imma",
+    "rase": "Morgan",
+    "fodselsdato": "2005-06-16",
+    "lisens": 40437,
+    "mankehoeyde": 155,
+    "nivaa": "La dressur og 70 cm sprang",
+    "maksvekt": 90,
+    "bilde": "assets/hester-ponnier/Imma.avif"
+  },
+  {
+    "navn": "Grandads Lucky Charm",
+    "rase": "Irish draught",
+    "fodselsdato": "2015-04-25",
+    "lisens": 0,
+    "mankehoeyde": 174,
+    "nivaa": "Lb dressur og 100 cm sprang",
+    "maksvekt": 120,
+    "bilde": "assets/hester-ponnier/GrandadsLuckyCharm.avif"
+  },
+  {
+    "navn": "Black Beauty of Botten",
+    "rase": "Blanding av varmblods og darthmoor ponni",
+    "fodselsdato": "2011-05-07",
+    "lisens": 40082,
+    "mankehoeyde": 155,
+    "nivaa": "La dressur og 90 cm sprang",
+    "maksvekt": 90,
+    "bilde": "assets/hester-ponnier/BlackBeauty.avif"
+  },  
+  {
+    "navn": "Cindy",
+    "rase": "Cypsi cob",
+    "fodselsdato": "2021-05-15",
+    "lisens": 0,
+    "mankehoeyde": 135,
+    "nivaa": "Lc dressur",
+    "maksvekt": 50,
+    "bilde": "assets/hester-ponnier/Cindy.avif"
+  },
+  {
+    "navn": "Spirit",
+    "rase": "Blanding av araber, tinker og New forest",
+    "fodselsdato": "2006-08-16",
+    "lisens": 35929,
+    "mankehoeyde": 148,
+    "nivaa": "Lb dressur og 90 cm sprang",
+    "maksvekt": 90,
+    "bilde": "assets/hester-ponnier/Spirit.avif"
+  },
+    {
+    "navn": "Amigo",
+    "rase": "Blanding av Shetland/Welsh og Mountain/sportsponni",
+    "fodselsdato": "2008-05-14",
+    "lisens": 45267,
+    "mankehoeyde": 119,
+    "nivaa": "",
+    "maksvekt": 30,
+    "bilde": "assets/hester-ponnier/Amigo.avif"
+  },
+    {
+    "navn": "Little Loyd",
+    "rase": "Welsh",
+    "fodselsdato": "1998-06-24",
+    "lisens": 30832,
+    "mankehoeyde": 122,
+    "nivaa": "Lb dressur og 70 cm sprang",
+    "maksvekt": 40,
+    "bilde": "assets/hester-ponnier/Loyd.avif"
+  },
+    {
+    "navn": "Leo",
+    "rase": "Blanding av Morgan og Shetlandsponni",
+    "fodselsdato": "2009",
+    "lisens": 36627,
+    "mankehoeyde": 134,
+    "nivaa": "Lb dressur og 100 cm sprang",
+    "maksvekt": 50,
+    "bilde": "assets/hester-ponnier/Leo.avif"
+  },
+    {
+    "navn": "Jackie B",
+    "rase": "Gypsy cob",
+    "fodselsdato": "2015-06-01",
+    "lisens": 0,
+    "mankehoeyde": 136,
+    "nivaa": "Lb dressur og 70 cm sprang",
+    "maksvekt": 70,
+    "bilde": "assets/hester-ponnier/Jackie.jpg"
+  },
+    {
+    "navn": "Kurrbodas Hazel",
+    "rase": "Morgan",
+    "fodselsdato": "2004-07-07",
+    "lisens": 46733,
+    "mankehoeyde": 136,
+    "nivaa": "Lb dressur og 70 cm sprang",
+    "maksvekt": 60,
+    "bilde": "assets/hester-ponnier/Hazel.avif"
+  },
+    {
+    "navn": "Tom Jones",
+    "rase": "Welsh",
+    "fodselsdato": "2000-07-16",
+    "lisens": 37574,
+    "mankehoeyde": 140,
+    "nivaa": "Lb dressur og 80 cm sprang",
+    "maksvekt": 60,
+    "bilde": "assets/hester-ponnier/TomJones.avif"
+  },
+    {
+    "navn": "Amir",
+    "rase": "Svensk varmblods",
+    "fodselsdato": "2008-06-22",
+    "lisens": 36628,
+    "mankehoeyde": 179,
+    "nivaa": "Lb dressur og 90 cm sprang",
+    "maksvekt": 100,
+    "bilde": "assets/hester-ponnier/Amir.avif"
+  },
+    {
+    "navn": "Flying Champion",
+    "rase": "Sportsponnie",
+    "fodselsdato": "2006-05-15",
+    "lisens": 33899,
+    "mankehoeyde": 134,
+    "nivaa": "Lb dressur og 70 cm sprang",
+    "maksvekt": 50,
+    "bilde": "assets/hester-ponnier/FlyingChampion.avif"
+  },
+    {
+    "navn": "Nala",
+    "rase": "",
+    "fodselsdato": "",
+    "lisens": 0,
+    "mankehoeyde": 0,
+    "nivaa": "",
+    "maksvekt": 0,
+    "bilde": "assets/hester-ponnier/Nala.jpg"
+  }
+]
