@@ -5,6 +5,7 @@ import { HesterPonnierComponent } from './pages/hester-ponnier/hester-ponnier.co
 import { KleskolleksjonComponent } from './pages/kleskolleksjon/kleskolleksjon.component';
 import { KontaktComponent } from './pages/kontakt/kontakt.component';
 import { AnsatteComponent } from './pages/ansatte/ansatte.component';
+import { PriserComponent } from './pages/priser/priser.component';
 
 export const routes: Routes = [
   { 
@@ -16,6 +17,11 @@ export const routes: Routes = [
     path: 'ride-kurs', 
     component: RideKursComponent, 
     title: 'Ridekurs – Stall Tonheim' 
+},
+  { 
+    path: 'priser', 
+    component: PriserComponent, 
+    title: 'Priser – Stall Tonheim' 
 },
   { 
     path: 'hester-ponnier', 

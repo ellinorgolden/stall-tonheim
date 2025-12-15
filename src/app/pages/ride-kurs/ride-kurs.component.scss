@@ -1,0 +1,58 @@
+.ridedager-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+
+  @media (min-width: 1508px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+.dag-tittel {
+  padding-left: 20px;
+
+}
+
+.dag-seksjon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.ridedag-card {
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 8px;
+}
+
+.dag-info {
+  margin-bottom: 1rem;
+}
+
+.ridedag-tabell {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.informasjons-tekst-kurs {
+  border-bottom: 1px solid var(--mat-sys-on-surface);
+  padding: 1rem;
+}
+
+.info-grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  align-items: center; 
+}
+
+.ridekurs-img {
+  height: auto;  
+  max-height: 300px; 
+  object-fit: cover;  
+}
+@media (max-width: 767px) {
+  .info-grid-box {
+    grid-template-columns: 1fr; 
+  }
+}

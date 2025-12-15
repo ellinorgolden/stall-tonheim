@@ -1,20 +1,8 @@
-
-<section 
-    class="carousel-container"
-    role="region"
-    aria-label="Bildekarusell med bilder fra rideskolen">
-
-  <div
-    class="carousel-track"
-    [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
-    [class.no-transition]="!transitionEnabled"
-    (transitionend)="onTransitionEnd()"
-  >
+<section  class="img-container">
+  <div class="carousel-track">
     <img 
-    *ngFor="let img of sliderImages" 
-    [src]="img"
-    alt="Bilder fra rideskolen"
+    [src]="'assets/home.jpg'"
+    alt="Bilde av hest"
     role="img" />
   </div>
-
 </section>

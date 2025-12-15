@@ -21,7 +21,7 @@ html {
 
 body {
   color-scheme: light;
-  background-color: var(--mat-sys-surface);
+  background-color:  #d5d6da;
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
   margin: 0;
@@ -37,18 +37,16 @@ body {
   font-family: var(--font-family-main), sans-serif !important;
 }
 
-.dropdown-menu.mat-mdc-menu-panel {
-  background-color: #2c2f67;
-  text-decoration: none;
-  color: white;
-  min-width: 200px !important;   
-  border-radius: 0 !important; 
-  overflow-x: hidden !important; 
+
+.content-wrapper {
+  
+  margin: 0 auto;     
+  box-sizing: border-box;
 }
 
-.dropdown-menu .mat-mdc-menu-item {
-  color: var(--text-color-main) !important;  
-  font-family: inherit !important;      
-  border-radius: 8px !important;  
-  margin: 2px 8px;               
+@media (min-width: 1800px) {
+  .content-wrapper {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }

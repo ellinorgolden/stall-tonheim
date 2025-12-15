@@ -9,7 +9,7 @@
     role="button"
   >
 
-      <!-- Mobile Navigation Links -->
+      <!-- Mobile -->
     <div class="close-button-container">
       <button 
         mat-icon-button 
@@ -21,25 +21,25 @@
     </div>
 
     <mat-nav-list>
-      <a mat-list-item routerLink="/" 
-        (click)="sidenav.close()"
-        role="link">Hjem</a>
-      <a mat-list-item routerLink="/ride-kurs" 
-        (click)="sidenav.close()"
-        role="link">Ridekurs</a>
-        <mat-expansion-panel>
+      <a mat-list-item routerLink="/" (click)="sidenav.close()" role="link">Hjem</a>
+
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Våre tilbud</mat-panel-title>
+          </mat-expansion-panel-header>
+            <a mat-list-item routerLink="/ride-kurs" (click)="sidenav.close()">Ridekurs</a>
+            <a mat-list-item routerLink="/priser" (click)="sidenav.close()">Priser</a>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>Om oss</mat-panel-title>
           </mat-expansion-panel-header>
             <a mat-list-item routerLink="/hester-ponnier" (click)="sidenav.close()">Våre hester</a>
             <a mat-list-item routerLink="/ansatte" (click)="sidenav.close()">Våre ansatte</a>
       </mat-expansion-panel>
-      <a mat-list-item routerLink="/kleskolleksjon" 
-        (click)="sidenav.close()" 
-        role="link">Kleskolleksjon</a>
-      <a mat-list-item routerLink="/kontakt" 
-        (click)="sidenav.close()" 
-        role="link">Kontakt</a>
+
+      <a mat-list-item routerLink="/kleskolleksjon" (click)="sidenav.close()" role="link">Kleskolleksjon</a>
+      <a mat-list-item routerLink="/kontakt" (click)="sidenav.close()"  role="link">Kontakt</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -64,17 +64,22 @@
         alt="Stall Tonheim logo" />
     </div>
 
-    <!-- Desktop Navigation Links -->
+    <!-- Desktop -->
     <nav 
       class="desktop-nav" 
       *ngIf="sidenavMode === 'side'"
       role="navigation"
       aria-label="Hovedmeny">
         <a routerLink="/" role="link">Hjem</a>
-        <a routerLink="/ride-kurs" role="link">Ridekurs</a>
-              <button mat-button [matMenuTriggerFor]="omOssMenu" aria-label="Om oss">
-          Om oss
-        </button>
+
+        <button mat-button [matMenuTriggerFor]="viTilbyrMenu" aria-label="Om oss"> Vi tilbyr </button>
+        <mat-menu #viTilbyrMenu="matMenu" class="dropdown-menu">
+          <button mat-menu-item routerLink="/ride-kurs">Ridekurs</button>
+          <button mat-menu-item routerLink="/priser">Priser</button>
+        </mat-menu>
+
+
+        <button mat-button [matMenuTriggerFor]="omOssMenu" aria-label="Om oss"> Om oss </button>
         <mat-menu #omOssMenu="matMenu" class="dropdown-menu">
           <button mat-menu-item routerLink="/hester-ponnier">Våre hester</button>
           <button mat-menu-item routerLink="/ansatte">Våre ansatte</button>
