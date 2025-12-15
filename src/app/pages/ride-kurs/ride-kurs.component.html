@@ -1,0 +1,77 @@
+
+<section class="informasjons-tekst-kurs">
+   <h1>Informasjon</h1>
+  <div class="info-grid-box">
+    <div> 
+      <p> Vi ønsker at du skal få en helhetlig opplevelse av hva det innebærer å drive med hest. 
+        Derfor starter hver ridetime med stell av hesten "din", slik at du lærer deg å håndtere, stelle, og sale på/av hesten. 
+        Du lærer deg viktige sikkerhetsregler i håndtering av hest, og også litt om hestens instinkter. 
+        I tillegg ønsker vi at hestene skal få muligheten til å få en pause mellom ridetimene, 
+        slik at de holder seg friske, skadefrie, og fornøyde i "jobben sin" som rideskolehest.</p>
+      <p> Rideskole året er delt inn i 4 kurs. 
+        Det er plass til maks 8 deltakere per kurs.
+        En ride time varer i 90 minutter, hvorav ca. 30 minutter brukes til stell av hesten før og etter ridetimen.
+        Vi varierer ridetimene med sprang, bomtreninger, dressur, tur, gymkhana, terrengritt, "kosetimer", og mye mer. </p>
+    </div>
+    <div>
+      <img 
+        class="ridekurs-img" 
+        src="assets/ridekurs.jpg" 
+        alt="Jente som leier hest" />
+  </div>
+  </div>
+</section>
+<section class="informasjons-tekst-kurs">
+<h1>Kurs oversikt</h1>
+<div class="ridedager-grid">
+  <div *ngFor="let dag of ridedager" class="dag-seksjon">
+
+  <mat-card class="ridedag-card">
+
+    <mat-card-header class="dag-tittel">
+      <mat-card-title>{{ dag.dag }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p *ngIf="dag.info" class="dag-info">
+        {{ dag.info }}
+      </p>
+
+      <table
+        *ngIf="dag.timer.length"
+        mat-table
+        [dataSource]="dag.timer"
+        class="ridedag-tabell"
+      >
+
+        <!-- Klokkeslett -->
+        <ng-container matColumnDef="klokkeslett">
+          <th mat-header-cell *matHeaderCellDef> Klokkeslett </th>
+          <td mat-cell *matCellDef="let rad">
+            <time [attr.datetime]="rad.datetime">
+              {{ rad.klokkeslett }}
+            </time>
+          </td>
+        </ng-container>
+
+        <!-- Gruppe -->
+        <ng-container matColumnDef="gruppe">
+          <th mat-header-cell *matHeaderCellDef> Gruppe </th>
+          <td mat-cell *matCellDef="let rad">
+            {{ rad.gruppe }}
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="visteKolonner"></tr>
+        <tr mat-row *matRowDef="let rad; columns: visteKolonner"></tr>
+
+      </table>
+
+    </mat-card-content>
+
+  </mat-card>
+
+</div>
+</div>
+
+</section>

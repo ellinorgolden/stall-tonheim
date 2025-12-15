@@ -1,5 +1,8 @@
+/* =============================
+   Layout
+============================= */
+
 .sidenav-container {
-  display: block;
   width: 100%;
   position: relative;
   z-index: 1000;
@@ -7,18 +10,21 @@
 
 mat-toolbar {
   background-color: var(--background-color-blue);
-  height: 100px;
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 1100;
+
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 16px;
   box-sizing: border-box;
-   min-height: 100px; 
 }
+
+/* =============================
+   Toolbar content
+============================= */
 
 .toolbar-layout {
   width: 100%;
@@ -37,8 +43,27 @@ mat-toolbar {
 }
 
 .logo {
-  height: 80px;
+  height: 190px;
   width: auto;
+}
+
+/* =============================
+   Desktop navigation
+============================= */
+
+mat-toolbar {
+  background-color: var(--background-color-blue);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+  height: 200px;
 }
 
 .desktop-nav {
@@ -50,22 +75,26 @@ mat-toolbar {
   button[mat-button] {
     display: inline-flex;
     align-items: center;
-    text-decoration: none;
+    font-family: inherit;
+    font-size: 26px;
+    font-weight: 350;
     color: var(--text-color-main);
-    font-weight: 500;
-    font-size: 16px;
+    text-decoration: none;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
-    font-family: inherit;
-    height: 100%;
+    transition: transform 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
+      transform: scale(1.05);
     }
   }
 }
+
+/* =============================
+   Mobile sidenav
+============================= */
 
 .close-button-container {
   display: flex;
@@ -73,24 +102,84 @@ mat-toolbar {
   padding: 8px;
 }
 
-@media (max-width: 767px) {
-  .sidenav {
-    width: 250px;
-    height: 100vh; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: white;
-    z-index: 1200;
-    overflow-y: auto;
+.sidenav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 1200;
+  overflow-y: auto;
+}
+
+.sidenav a[mat-list-item],
+.sidenav mat-expansion-panel-header {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 350;
+  color: var(--text-color-main);
+  background: none;
+  transition: background-color 0.2s ease;
+}
+
+.sidenav a[mat-list-item]:hover,
+.sidenav mat-expansion-panel-header:hover {
+  background-color: rgba(44, 47, 103, 0.08);
+}
+
+/* Expansion panels */
+.sidenav mat-expansion-panel {
+  box-shadow: none;
+  background: none;
+  border: none;
+}
+
+.sidenav mat-expansion-panel-header {
+  padding: 0 16px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.sidenav mat-expansion-panel-header .mat-expansion-indicator {
+  margin-left: auto;
+  color: var(--text-color-main);
+}
+
+.sidenav mat-expansion-panel a[mat-list-item] {
+  padding-left: 32px;
+  height: 40px;
+  font-size: 15px;
+}
+
+/* =============================
+   Dropdown (desktop)
+============================= */
+
+::ng-deep .dropdown-menu.mat-mdc-menu-panel {
+  background-color: var(--background-color-blue);
+  min-width: 200px;
+  padding: 4px 0;
+  overflow: hidden;
+}
+
+
+/* =============================
+   Responsive
+============================= */
+
+@media (max-width: 1115px) {
+  mat-toolbar {
+    height: 100px;
+  }
+
+  .logo {
+    height: 80px;
   }
 
   .desktop-nav {
     display: none;
-  }
-
-  mat-toolbar {
-    color: white;
   }
 }
 
@@ -98,41 +187,39 @@ button[aria-label="Åpne meny"] mat-icon {
   color: rgb(245, 239, 239);
 }
 
-.sidenav mat-expansion-panel {
-  box-shadow: none !important;
-  background: none !important;
-  border: none !important;
+/* Desktop dropdown menu */
+::ng-deep .dropdown-menu.mat-mdc-menu-panel {
+  background-color: var(--background-color-blue);
+  min-width: 200px;
+  padding: 8px 0;
+  box-shadow: none;
 }
 
-.sidenav mat-expansion-panel-header {
-  padding: 0 16px !important;
-  height: 48px !important;
+/* Menu items = lik desktop-nav */
+::ng-deep .dropdown-menu .mat-mdc-menu-item {
+  font-family: inherit;
+  font-size: 26px;
+  font-weight: 350;
+  color: var(--text-color-main);
+
   background: none !important;
-  border: none !important;
+  border: none;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
 
-  color: var(--text-color-main) !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  font-family: inherit !important;
+  transition: transform 0.2s ease;
 }
 
-.sidenav mat-expansion-panel-header.mat-expanded,
-.sidenav mat-expansion-panel-header:hover {
+/* Hover-effekt – samme som desktop */
+::ng-deep .dropdown-menu .mat-mdc-menu-item:hover {
   background: none !important;
+  transform: scale(1.05);
 }
 
-.sidenav mat-expansion-panel-header .mat-expansion-indicator {
-  color: var(--text-color-main) !important;
-  margin-left: auto;
-}
-.sidenav mat-expansion-panel a[mat-list-item] {
-  padding-left: 32px !important;   
-  height: 40px !important;
-  color: var(--text-color-main) !important;
-  font-size: 15px !important;
-  font-weight: 400 !important;
+/* Fjern Angular Material focus/active bakgrunn */
+::ng-deep .dropdown-menu .mat-mdc-menu-item:focus,
+::ng-deep .dropdown-menu .mat-mdc-menu-item:active {
   background: none !important;
 }

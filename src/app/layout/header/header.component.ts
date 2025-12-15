@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit {
   constructor(private observer: BreakpointObserver) {}
 
   ngOnInit(): void {
-    this.observer.observe(['(max-width: 767px)'])
+    this.observer.observe(['(max-width: 1115px)'])
       .subscribe(result => {
         if (result.matches) {
           this.sidenavMode = 'over';
