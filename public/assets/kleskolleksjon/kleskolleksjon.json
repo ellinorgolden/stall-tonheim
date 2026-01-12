@@ -1,0 +1,150 @@
+[
+  {
+    "tittel": "Clique Idaho jakke",
+    "farge": "Marineblå",
+    "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL"],
+    "beskrivelse": "Varm og komfertabel jakke med dunlignende vattering. Barnesikker avtagbar hette med tre utvendige lommer med glidelås samt to innerlommer. Elastisk teip i nederkant og på ermeavslutningene. Leveres ned farget stropp(til oppheng), øretelefonløsning og glidelåstrekkere. Loge brodert på ryggen",
+    "materiale": "100% resirkulert polyamid",
+    "modell":["herre, dame"],
+    "prisBarn": 1099,
+    "prisVoksen": 1299,
+    "bilde": "assets/kleskolleksjon/CliqueIdahoJakke.avif"
+  },
+  {
+    "tittel": "JM Vinterjakke",
+    "farge": "Marineblå",
+    "str": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+    "beskrivelse": "Varmforet, vattert jakke som er vind- og vanntett med tapede sømmer, avtagbar hette, lommer både på innsiden og utsiden, refleks på lommekanter og nederst på ryggen.",
+    "materiale": "100% polyester",
+    "modell":["herre, dame"],
+    "prisVoksen": 1649,
+    "bilde": "assets/kleskolleksjon/JMVinterJakke.avif"
+  },
+    {
+    "tittel": "Malamut parkas jakke",
+    "farge": "Sort",
+    "str": ["XXS","XS", "S", "M", "L", "XL", "XXL", "3XL"],
+    "beskrivelse": "Varm eksoedisjons parkas for iskaldt vær. Jakken gar innvendig mansjetter med rib, gummiknapper, flere utvendige lommer og en avtagbar hette med avtagbar fuskepels. Logo brodert på ryggen",
+    "materiale": "Ytterstoff: Polymid 189 med PU belgegg. Fór: 100% polyester",
+    "modell":["herre, dame"],
+    "prisVoksen": 2999,
+    "bilde": "assets/kleskolleksjon/MalamutParkasJakke.avif"
+  },
+    {
+    "tittel": "Clique Classic Softshell",
+    "farge": "Marineblå",
+    "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL", "XXL", "3XL"],
+    "beskrivelse": "Softshell jakke med hette. 3 ytterlommer og 2 innerlommer",
+    "materiale": "",
+    "modell":["dame"],
+    "prisBarn": 999,
+    "prisVoksen": 1249,
+    "bilde": "assets/kleskolleksjon/CliqueClassicSoftshellHoody.avif"
+  },
+    {
+    "tittel": "Clique Idaho Vest",
+    "farge": "Marineblå",
+    "str": ["XS", "S", "M", "L", "XL", "XXL"],
+    "beskrivelse": "En varm, men likevel lett vest med dunlignende vattering. Tre utvendige lommer med glidelås, og to innerlommer. Elastisk teip i nederkant og ved ermåpningene. Avtagbar hette, farget stropp(til oppheng), øretelefonløsning og glidelåsstrekkere.",
+    "materiale": "100% resirkulert polyamid",
+    "modell":["dame"],
+    "prisVoksen": 1099 ,
+    "bilde": "assets/kleskolleksjon/CliqueIdahoVest.avif"
+  },
+  {
+  "tittel": "Classic hettejakke",
+  "farge": "Marineblå",
+  "str": ["XS", "S", "M", "L", "XL", "XXL"],
+  "beskrivelse": "Hettejakke til dame med hel glidelås, tå glidelåslommer i front samt to innerlommer. Kontrasterende mesh i hetten. 2x2 ribb med strech i nederkant og ermeavslutting. Ton-iton flatlocksommer. Tilpasset for hodetelefoner.",
+  "materiale": "80% Bomull, 20% Polyester",
+  "modell": ["dame"],
+  "prisVoksen": 649,
+  "bilde": "assets/kleskolleksjon/ClassicHetteJakke.avif"
+},
+{
+  "tittel": "Basic fleecejakke",
+  "farge": "Marineblå",
+ "str": ["XS", "S", "M", "L", "XL", "XXL"],
+  "beskrivelse": "Microfleece jakke med to ytterlommer, to innerlommer og glidelåse. Løsning til hodetelefoner og SBS glidelåser.",
+  "materiale": "100% polyester, antipilling micro fleece",
+  "modell": ["herre, dame"],
+  "prisVoksen": 549,
+  "bilde": "assets/kleskolleksjon/FleeceJakke.avif"
+},
+{
+  "tittel": "College genser",
+  "farge": "Marineblå",
+  "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"],
+  "beskrivelse": "Sweatshirt genser, flatlock sømmer som er ton-i-ton. 2x2 ribb, skjult glidelås. Logo med trykk på ryggen",
+  "materiale": "80% bomull, 20% polyester",
+  "modell": ["herre, dame"],
+  "prisBarn": 349,
+  "prisVoksen": 449,
+  "bilde": "assets/kleskolleksjon/CollegeGenser.avif"
+},{
+  "tittel": "Classic hoddy",
+  "farge": "Marineblå",
+  "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL"],
+  "beskrivelse": "Hettegenser med snsøre i hette og nederkant. Mykt og deilig stoff. Mobillomme på innsiden med mageparti med hull til hodetelefonene så man kan ri uten å miste monilen. Logo på rygg.",
+  "materiale": "80% bomull, 20% polyester",
+  "modell": ["herre, dame"],
+  "prisBarn": 449,
+  "prisVoksen": 549,
+  "bilde": "assets/kleskolleksjon/ClassicHoddy.avif"
+},
+{
+  "tittel": "Piquet Marion langarmet",
+  "farge": "Marineblå",
+  "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL", "XXL", "3XL"],
+  "beskrivelse": "Klassisk langarmet genser i bomullskvalitet med knepping i halsen.",
+  "materiale": "100% bomull",
+  "modell": ["herre, dame"],
+  "prisBarn": 349,
+  "prisVoksen": 449,
+  "bilde": "assets/kleskolleksjon/PiquetMarion.avif"
+},
+{
+  "tittel": "Piquet Marion kortarmet",
+  "farge": "Marineblå",
+  "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"],
+  "beskrivelse": "Klassisk kortarmet genser i bomullskvalitet med knepping i halsen.",
+  "materiale": "100% bomull",
+  "modell": ["herre, dame"],
+  "prisBarn": 349,
+  "prisVoksen": 399,
+  "bilde": "assets/kleskolleksjon/PiquetMarionKortArm.avif"
+},
+{
+  "tittel": "Basic t-shirt",
+  "farge": "Marineblå",
+  "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL"],
+  "beskrivelse": "Klassisk enkel t-skjorte ",
+  "materiale": "",
+  "modell": ["herre, dame"],
+  "prisBarn": 299,
+  "prisVoksen": 349,
+  "bilde": "assets/kleskolleksjon/BasicT.avif"
+},
+{
+  "tittel": "Hummel tights",
+  "farge": "Sort",
+  "str": ["XS", "S", "M", "L"],
+  "beskrivelse": "Klassisk tights fra hummel, stalltonheim logo på høyre nedre lår.",
+  "materiale": "88% polyester, 12% elastane",
+  "modell": ["dame"],
+  "prisBarn": 479,
+  "prisVoksen": 579,
+  "bilde": "assets/kleskolleksjon/HummelTights.avif"
+},
+{
+  "tittel": "Basic t-shirt",
+  "farge": "Marineblå",
+  "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL"],
+  "beskrivelse": "Klassisk enkel t-skjorte ",
+  "materiale": "",
+  "modell": ["herre, dame"],
+  "prisBarn": 299,
+  "prisVoksen": 349,
+  "bilde": "assets/kleskolleksjon/BasicT.avif"
+}
+]

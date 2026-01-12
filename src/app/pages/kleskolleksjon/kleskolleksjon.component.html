@@ -1,0 +1,13 @@
+<div class="produkt-grid">
+  <button type="button" class="produkt-kort" *ngFor="let produkt of produkter">
+    <img [src]="produkt.bilde" [alt]="produkt.tittel" />
+    <p class="tittel">{{ produkt.tittel }}</p>
+
+    <p *ngIf="produkt.prisBarn ; else voksenPris" >
+      Barn: {{ produkt.prisBarn }} kr / Voksen: {{ produkt.prisVoksen }} kr
+    </p>
+    <ng-template #voksenPris>
+      <p>Pris: {{ produkt.prisVoksen }} kr</p>
+    </ng-template>
+</button>
+</div>
