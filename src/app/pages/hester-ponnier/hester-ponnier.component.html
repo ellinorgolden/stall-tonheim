@@ -1,37 +1,18 @@
-<div class="horses-grid">
-  <div
-    class="horse-card"
-    *ngFor="let hest of hester; trackBy: trackById; let i = index"
-    (click)="openFullView(i)"
-    role="button"
-    tabindex="0"
-    aria-label="Les mer om {{ hest.navn }}"
-    (keydown.enter)="openFullView(i)"
-  >
-  <div class="image-container">
-    <img [src]="hest.bilde" [alt]="hest.navn" />
-  </div>
-  <p class="horse-name">{{ hest.navn }}</p>
-  </div>
-</div>
-
-
-<div class="lightbox" *ngIf="fullViewIndex !== null" role="dialog" aria-modal="true">
-  <button class="close-btn" (click)="closeFullView()" aria-label="Lukk fullvisning">&times;</button>
-
-  <button class="prev-btn" (click)="prevHorse()" aria-label="Forrige hest">&#10094;</button>
-  <button class="next-btn" (click)="nextHorse()" aria-label="Neste hest">&#10095;</button>
-
-  <div class="fullview-content">
-    <img [src]="hester[fullViewIndex].bilde" [alt]="hester[fullViewIndex].navn" />
-    <div class="horse-details">
-      <h2>{{ hester[fullViewIndex].navn }}</h2>
-      <p><strong>Rase:</strong> {{ hester[fullViewIndex].rase }}</p>
-      <p><strong>Født:</strong> {{ hester[fullViewIndex].fodselsdato }}</p>
-      <p *ngIf="hester[fullViewIndex].lisens != 0"><strong>Lisens:</strong> {{ hester[fullViewIndex].lisens }}</p>
-      <p><strong>Mankehøyde:</strong> {{ hester[fullViewIndex].mankehoeyde }} cm</p>
-      <p><strong *ngIf="hester[fullViewIndex].nivaa != ''">Nivå:</strong> {{ hester[fullViewIndex].nivaa }}</p>
-      <p><strong>Maks vekt:</strong> {{ hester[fullViewIndex].maksvekt }} kg</p>
-    </div>
-  </div>
-</div>
+<section class="hest-grid" aria-labelledby="hest-overskrift">
+  <h2 id="hest-overskrift" class="visuelt-skjult">
+    Våre hester
+  </h2>
+  
+  <button 
+   type="button" 
+   class="hest-kort" 
+   *ngFor="let hest of hester">
+    <img 
+     [src]="hest.bilde"
+     [alt]="'Bilde av ' + hest.navn"/>
+    <span class="tittel">{{ hest.navn }}</span>
+    <span class="visuelt-skjult">
+     Klikk for å åpne hesteside og lese mer om hesten
+    </span>
+</button>
+</section>

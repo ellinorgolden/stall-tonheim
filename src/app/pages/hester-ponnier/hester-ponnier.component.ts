@@ -21,7 +21,6 @@ import { CommonModule } from '@angular/common';
 export class HesterPonnierComponent {
 
   hester: Hest[] = [];
-  fullViewIndex: number | null = null;
 
   constructor(private hesterPonnierService: HesterPonnierService) {}
 
@@ -34,29 +33,5 @@ export class HesterPonnierComponent {
   });
 }
 
-  trackById(index: number, hest: Hest) {
-    return hest.lisens;
-  }
-
-  openFullView(index: number) {
-    this.fullViewIndex = index;
-  }
-
-  closeFullView() {
-    this.fullViewIndex = null;
-  }
-
-  prevHorse() {
-    if (this.fullViewIndex !== null) {
-      this.fullViewIndex =
-        (this.fullViewIndex - 1 + this.hester.length) % this.hester.length;
-    }
-  }
-
-  nextHorse() {
-    if (this.fullViewIndex !== null) {
-      this.fullViewIndex = (this.fullViewIndex + 1) % this.hester.length;
-    }
-  }
 
 }

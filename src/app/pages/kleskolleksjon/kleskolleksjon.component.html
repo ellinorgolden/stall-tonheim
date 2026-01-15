@@ -1,13 +1,23 @@
-<div class="produkt-grid">
-  <button type="button" class="produkt-kort" *ngFor="let produkt of produkter">
-    <img [src]="produkt.bilde" [alt]="produkt.tittel" />
-    <p class="tittel">{{ produkt.tittel }}</p>
+<section class="produkt-grid" aria-labelledby="kleskolleksjon-overskrift">
+    <h2 id="Kleskolleksjon-overskrift" class="visuelt-skjult">
+      Oversikt over kleskolleksjon
+    </h2>
 
-    <p *ngIf="produkt.prisBarn ; else voksenPris" >
-      Barn: {{ produkt.prisBarn }} kr / Voksen: {{ produkt.prisVoksen }} kr
-    </p>
-    <ng-template #voksenPris>
-      <p>Pris: {{ produkt.prisVoksen }} kr</p>
-    </ng-template>
-</button>
-</div>
+    <button 
+    type="button" 
+    class="produkt-kort" 
+    *ngFor="let produkt of produkter"
+    >
+      <img [src]="produkt.bilde" [alt]="'Bilde av ' + produkt.tittel" />
+      <span class="tittel">{{ produkt.tittel }}</span>
+      <span class="visuelt-skjult">
+        Klikk for å åpne produktside og legge inn bestilling
+      </span>
+      <span *ngIf="produkt.prisBarn ; else voksenPris" >
+        Barn: {{ produkt.prisBarn }} kr / Voksen: {{ produkt.prisVoksen }} kr
+      </span>
+      <ng-template #voksenPris>
+        <span>Pris: {{ produkt.prisVoksen }} kr</span>
+      </ng-template>
+    </button>
+</section>
