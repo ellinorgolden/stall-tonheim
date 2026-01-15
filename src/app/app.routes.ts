@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { HjemComponent } from './pages/hjem/hjem.component';
 import { RideKursComponent } from './pages/ride-kurs/ride-kurs.component';
 import { HesterPonnierComponent } from './pages/hester-ponnier/hester-ponnier.component';
 import { KleskolleksjonComponent } from './pages/kleskolleksjon/kleskolleksjon.component';
@@ -10,7 +10,7 @@ import { PriserComponent } from './pages/priser/priser.component';
 export const routes: Routes = [
   { 
     path: '',
-    component: HomeComponent, 
+    component: HjemComponent, 
     title: 'Stall Tonheim' 
 },
   { 
