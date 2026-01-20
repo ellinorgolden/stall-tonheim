@@ -1,8 +1,7 @@
 
 <section class="informasjons-tekst-kurs">
    <h1>Informasjon</h1>
-  <div class="info-grid-box">
-    <div> 
+  <div class="info-box">
       <p> Vi ønsker at du skal få en helhetlig opplevelse av hva det innebærer å drive med hest. 
         Derfor starter hver ridetime med stell av hesten "din", slik at du lærer deg å håndtere, stelle, og sale på/av hesten. 
         Du lærer deg viktige sikkerhetsregler i håndtering av hest, og også litt om hestens instinkter. 
@@ -12,15 +11,12 @@
         Det er plass til maks 8 deltakere per kurs.
         En ride time varer i 90 minutter, hvorav ca. 30 minutter brukes til stell av hesten før og etter ridetimen.
         Vi varierer ridetimene med sprang, bomtreninger, dressur, tur, gymkhana, terrengritt, "kosetimer", og mye mer. </p>
+
+      <p>Sjekk tilgjengelige tilbud og book igjennom BookingLeaf eller send oss en mail.</p>  
+      <app-booking-leaf-snarvei></app-booking-leaf-snarvei>
     </div>
-    <div>
-      <img 
-        class="ridekurs-img" 
-        src="assets/ridekurs.jpg" 
-        alt="Jente som leier hest" />
-  </div>
-  </div>
 </section>
+
 <section class="informasjons-tekst-kurs">
 <h1>Kurs oversikt</h1>
 <div class="ridedager-grid">
@@ -43,8 +39,6 @@
         [dataSource]="dag.timer"
         class="ridedag-tabell"
       >
-
-        <!-- Klokkeslett -->
         <ng-container matColumnDef="klokkeslett">
           <th mat-header-cell *matHeaderCellDef> Klokkeslett </th>
           <td mat-cell *matCellDef="let rad">
@@ -54,7 +48,6 @@
           </td>
         </ng-container>
 
-        <!-- Gruppe -->
         <ng-container matColumnDef="gruppe">
           <th mat-header-cell *matHeaderCellDef> Gruppe </th>
           <td mat-cell *matCellDef="let rad">
@@ -68,7 +61,6 @@
       </table>
 
     </mat-card-content>
-
   </mat-card>
 
 </div>
