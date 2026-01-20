@@ -1,5 +1,6 @@
 [
   {
+    "slug": "clique-idaho-jakke",
     "tittel": "Clique Idaho jakke",
     "farge": "Marineblå",
     "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL"],
@@ -11,6 +12,7 @@
     "bilde": "assets/kleskolleksjon/CliqueIdahoJakke.avif"
   },
   {
+    "slug": "jm-vinterjakke",
     "tittel": "JM Vinterjakke",
     "farge": "Marineblå",
     "str": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
@@ -21,6 +23,7 @@
     "bilde": "assets/kleskolleksjon/JMVinterJakke.avif"
   },
     {
+    "slug": "malamut-parkas-jakke",
     "tittel": "Malamut parkas jakke",
     "farge": "Sort",
     "str": ["XXS","XS", "S", "M", "L", "XL", "XXL", "3XL"],
@@ -31,6 +34,7 @@
     "bilde": "assets/kleskolleksjon/MalamutParkasJakke.avif"
   },
     {
+    "slug": "clinque-classic-softshell",
     "tittel": "Clique Classic Softshell",
     "farge": "Marineblå",
     "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL", "XXL", "3XL"],
@@ -42,6 +46,7 @@
     "bilde": "assets/kleskolleksjon/CliqueClassicSoftshellHoody.avif"
   },
     {
+    "slug": "clique-idaho-vest",
     "tittel": "Clique Idaho Vest",
     "farge": "Marineblå",
     "str": ["XS", "S", "M", "L", "XL", "XXL"],
@@ -52,6 +57,7 @@
     "bilde": "assets/kleskolleksjon/CliqueIdahoVest.avif"
   },
   {
+  "slug": "classic-hettejakke",
   "tittel": "Classic hettejakke",
   "farge": "Marineblå",
   "str": ["XS", "S", "M", "L", "XL", "XXL"],
@@ -62,6 +68,7 @@
   "bilde": "assets/kleskolleksjon/ClassicHetteJakke.avif"
 },
 {
+  "slug": "basic-fleecejakke",
   "tittel": "Basic fleecejakke",
   "farge": "Marineblå",
  "str": ["XS", "S", "M", "L", "XL", "XXL"],
@@ -71,7 +78,8 @@
   "prisVoksen": 549,
   "bilde": "assets/kleskolleksjon/FleeceJakke.avif"
 },
-{
+{ 
+  "slug": "college-genser",
   "tittel": "College genser",
   "farge": "Marineblå",
   "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"],
@@ -81,7 +89,9 @@
   "prisBarn": 349,
   "prisVoksen": 449,
   "bilde": "assets/kleskolleksjon/CollegeGenser.avif"
-},{
+},
+{
+  "slug": "classic-hoddy",
   "tittel": "Classic hoddy",
   "farge": "Marineblå",
   "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL"],
@@ -93,6 +103,7 @@
   "bilde": "assets/kleskolleksjon/ClassicHoddy.avif"
 },
 {
+  "slug": "piquet-marion-langarmet",
   "tittel": "Piquet Marion langarmet",
   "farge": "Marineblå",
   "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL", "XXL", "3XL"],
@@ -104,6 +115,7 @@
   "bilde": "assets/kleskolleksjon/PiquetMarion.avif"
 },
 {
+  "slug": "piquet-marion-kortarmet",
   "tittel": "Piquet Marion kortarmet",
   "farge": "Marineblå",
   "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL", "6XL"],
@@ -115,6 +127,7 @@
   "bilde": "assets/kleskolleksjon/PiquetMarionKortArm.avif"
 },
 {
+  "slug": "basic-t-shirt",
   "tittel": "Basic t-shirt",
   "farge": "Marineblå",
   "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL"],
@@ -126,9 +139,10 @@
   "bilde": "assets/kleskolleksjon/BasicT.avif"
 },
 {
+  "slug": "hummel-tights",
   "tittel": "Hummel tights",
   "farge": "Sort",
-  "str": ["XS", "S", "M", "L"],
+  "str": ["110/120", "130/140", "150/160","XS", "S", "M", "L"],
   "beskrivelse": "Klassisk tights fra hummel, stalltonheim logo på høyre nedre lår.",
   "materiale": "88% polyester, 12% elastane",
   "modell": ["dame"],
@@ -137,6 +151,7 @@
   "bilde": "assets/kleskolleksjon/HummelTights.avif"
 },
 {
+  "slug": "basic-t-shirt",
   "tittel": "Basic t-shirt",
   "farge": "Marineblå",
   "str": ["110/120", "130/140", "150/160", "XS", "S", "M", "L", "XL"],
