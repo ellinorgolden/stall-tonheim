@@ -55,7 +55,7 @@
 }
 
 .leggIKurvKnapp {
-  width: 100%; // ← matcher fieldset-bredden
+  width: 100%; 
   margin-top: 0.5rem;
 
   padding: 1.1rem 1.5rem;
@@ -92,12 +92,13 @@
 //mobile responsivitet
 @media (max-width: 1460px) {
   .produkt-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .produkt-bilde{
-     max-width: 400px;
-     justify-self: center;
+    min-width: unset;
+    max-width: 500px;
+    justify-self: center;
   }
   .produkt-info {
   max-width: 500px;
