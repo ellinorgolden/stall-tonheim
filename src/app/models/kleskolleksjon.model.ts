@@ -1,4 +1,5 @@
 export interface KlesProdukt {
+  slug: string;
   tittel: string;
   farge: string;
   str: string[];

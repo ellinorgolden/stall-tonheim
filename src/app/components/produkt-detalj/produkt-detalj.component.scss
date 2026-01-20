@@ -1,0 +1,111 @@
+.produkt-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  justify-content: center;
+}
+
+.produkt-bilde {
+  min-width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 8px;
+}
+
+.produkt-info {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  
+}
+.produkt-info fieldset {
+  margin-bottom: 1rem;
+}
+
+.tilbake-knapp {
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 0.4rem;
+
+  &:hover {
+    gap: 0.7rem;
+  }
+}
+
+.pris{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.feilmelding {
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem 1rem;
+
+  border-radius: 8px;
+  background-color: #fdecec;
+  color: #9f2c2c;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.leggIKurvKnapp {
+  width: 100%; // ← matcher fieldset-bredden
+  margin-top: 0.5rem;
+
+  padding: 1.1rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+
+  background-color: #111;
+  color: #fff;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+
+  &:hover:not(:disabled) {
+    background-color: #000;
+    transform: translateY(-1px);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    background-color: #cfcfcf;
+    color: #666;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+//mobile responsivitet
+@media (max-width: 1460px) {
+  .produkt-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .produkt-bilde{
+     max-width: 400px;
+     justify-self: center;
+  }
+  .produkt-info {
+  max-width: 500px;
+  justify-self: center;
+}
+}
+
+input:focus, select:focus, button:focus {
+  outline: 3px solid #111;
+  outline-offset: 2px;
+}

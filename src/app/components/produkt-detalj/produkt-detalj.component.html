@@ -1,0 +1,101 @@
+<nav aria-label="Navigasjon tilbake til kleskolleksjon">
+  <button class="tilbake-knapp" (click)="tilbakeTilKolleksjon()">
+    ←  Kleskolleksjon / {{produkt.tittel}}
+  </button>
+</nav>
+
+
+<article class="produkt-layout">
+  <img
+  class="produkt-bilde"
+    [src]="produkt.bilde"
+    [alt]="'Produktbilde av ' + produkt.tittel"
+  />
+
+  <div class="produkt-info">
+    <h1>{{ produkt.tittel }}</h1>
+    <span>
+      <p class="pris" *ngIf="produkt.prisBarn ; else voksenPris">{{ produkt.prisBarn }}kr / {{ produkt.prisVoksen }}kr</p>
+      <ng-template #voksenPris>
+        <p class="pris">
+          {{ produkt.prisVoksen }}kr
+        </p>
+      </ng-template>
+    </span>
+
+    <p><strong>Beskrivelse:</strong> {{ produkt.beskrivelse }}</p>
+    <p><strong>Materiale:</strong> {{ produkt.materiale }}</p>
+    <p><strong>Leveringstid:</strong> 1 - 2 mnd</p>
+
+    <fieldset>
+      <legend>Velg størrelse</legend>
+      <select 
+      [(ngModel)]="valgtStoorrelse"     
+      (change)="oppdaterSum()"
+      required>
+        <option value="" disabled hidden>Velg størrelse</option>
+        <option *ngFor="let s of produkt.str" [value]="s">
+          {{ s }}
+        </option>
+      </select>
+    </fieldset>
+
+    <fieldset *ngIf="produkt.modell.length">
+      <legend>Navn på plagget (valgfritt)</legend>
+      <div>
+        <input 
+          id="brodering" 
+          type="checkbox" 
+          [(ngModel)]="brodering" 
+          (change)="onBroderingEndret()" />
+        <label for="brodering"> brodering + 175 Kr</label>
+      </div>
+      <div>
+        <input 
+          id="trykk" 
+          type="checkbox" 
+          [(ngModel)]="trykk" 
+          (change)="onTrykkEndret()" />
+        <label for="trykk"> Trykk + 100 Kr </label>
+      </div>
+      <input
+        *ngIf="brodering || trykk"
+        id="navn-paa-plagg"
+        type="text"
+        [(ngModel)]="navnPaaPlagg"
+        (ngModelChange)="formaterNavn($event)"
+        placeholder="Skriv ønsket navn her"
+        aria-describedby="navn-hjelp"
+      />
+      <p 
+        id="navn-hjelp" 
+        class="visuelt-skjult">
+        Navnet blir trykket på plagget
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Antall</legend>
+      <input 
+        type="number" 
+        min="1" 
+        aria-label="Antall produkter"
+        [(ngModel)]="antall" 
+        (change)="oppdaterSum()"/>
+    </fieldset>
+
+    <p 
+      class="feilmelding" 
+      *ngIf="feilmelding"
+      role="alert">
+    {{ feilmelding }} 
+    </p>
+
+    <button 
+      class="leggIKurvKnapp"
+      (click)="leggIKurv()">
+        {{ sum }}Kr Legg i handlekurv
+    </button>
+
+  </div>
+</article>

@@ -7,6 +7,7 @@ import { KontaktComponent } from './pages/kontakt/kontakt.component';
 import { AnsatteComponent } from './pages/ansatte/ansatte.component';
 import { PriserComponent } from './pages/priser/priser.component';
 
+
 export const routes: Routes = [
   { 
     path: '',
@@ -33,6 +34,13 @@ export const routes: Routes = [
     component: KleskolleksjonComponent, 
     title: 'Kleskolleksjon – Stall Tonheim' 
 },
+  {
+    path: 'klesprodukt/:slug',
+    loadComponent: () =>
+      import('./pages/produkt-side/produkt-side.component')
+        .then(m => m.ProduktSideComponent),
+    title: 'Produkt – Stall Tonheim',
+  },
   { 
     path: 'ansatte', 
     component: AnsatteComponent, 
