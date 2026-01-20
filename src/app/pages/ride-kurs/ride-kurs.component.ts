@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
+import { BookingLeafSnarveiComponent } from "../../components/produkt-detalj/booking-leaf-snarvei/booking-leaf-snarvei.component";
 
 interface Ridetime {
   klokkeslett: string;
@@ -21,10 +22,11 @@ interface Ridedag {
   templateUrl: './ride-kurs.component.html',
   styleUrls: ['./ride-kurs.component.scss'],
     imports: [
-    CommonModule, 
+    CommonModule,
     MatTableModule,
-    MatCardModule
-  ] 
+    MatCardModule,
+    BookingLeafSnarveiComponent
+] 
 })
 
 export class RideKursComponent {
@@ -72,7 +74,7 @@ ridedager: Ridedag[] = [
   },
   {
     dag: 'Lørdager',
-    info: 'På lørdager har vi enkle varierende ridetimer som alle kan melde seg på:',
+    info: 'På lørdager har vi enkle varierende ridetimer som alle kan melde seg på, følg med på bookingLeaf eller sosiale medier for oppdateringer.',
     timer: [
       { klokkeslett: 'kl. 09.15', datetime: '09:15', gruppe: 'Nybegynner – øvet' },
       { klokkeslett: 'kl. 10.45', datetime: '10:45', gruppe: 'Nybegynner – øvet' },
